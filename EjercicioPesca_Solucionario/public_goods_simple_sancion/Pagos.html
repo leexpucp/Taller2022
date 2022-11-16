@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Resultados Experimento "Proyecto Pesca Comunitaria" Ronda {{player.round_number}}
+{% endblock %}
+
+{% block content %}
+<style>
+p {font-size:20px; text-align:justify; line-height:35px}
+</style>
+
+<p>Los resultados de esta ronda son:</p>
+
+<table style="width:100%">
+
+    <td>Su sanción fue {{ player.sancion_monto }}. Tu puntaje sería {{player.payoff}}, pero por la sanción es {{player.pago_final}}. </td> En su grupo {{player.monitoreo}} y usted {{player.supervision}}.
+
+
+</table>
+<br></br>
+
+
+
+    {% next_button %}
+
+{% endblock %}

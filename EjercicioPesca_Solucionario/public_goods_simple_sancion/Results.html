@@ -19,18 +19,9 @@ p {font-size:20px; text-align:justify; line-height:35px}
         {% endfor %}
 
         <tr><td>Extracción total Total:</td><td>{{ group.total_contribution }}</td></tr>
-        <td>Por lo tanto, </td>
+
          </table>
        <br></br>
-
-        {{ if group.total_contribution <= 20 }} <b>Si hay una siguiente ronda,
-            el nivel de recurso para la siguiente ronda sería ALTO </b>  {{ else }}
-            <b>Si hay una siguiente ronda, el nivel de
-
-                o para la siguiente ronda sería BAJO</b>
-            {{ endif }}
-
-
 
 
 
