@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block content %}
+<div class="card bg-light m-3">
+    <div class="card-body">
+<style>
+p {font-size:20px; text-align:justify; line-height:35px}
+</style>
+
+    <h3>
+        Instrucciones: Cálculo del puntaje obtenido en cada Ronda
+    </h3>
+
+
+    <p>
+        El puntaje obtenido por pada jugador en cada ronda será de la siguiente manera:
+</p>
+        <p>
+        <ul>
+             <li>Se registrará en el sistema la cantidad de extracción individual (Xi) realizada.</li>
+           <li>El sistema registrará la cantidad total de extracción de los otros miembros del grupo (Zj).</li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+  {% next_button %}
+
+{% endblock %}
